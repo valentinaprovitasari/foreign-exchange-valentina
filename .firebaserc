@@ -1,5 +1,6 @@
 {
   "projects": {
-    "prod": "foreign-exchange-app-1579f"
+    "prod": "foreign-exchange-app-1579f",
+    "default": "foreign-exchange-app-1579f"
   }
 }

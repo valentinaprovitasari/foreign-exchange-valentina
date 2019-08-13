@@ -6,8 +6,11 @@ Vue.use(VueResource)
 
 export default {
   getData (path, callback, errorHandler) {
-    Vue.http.headers.common['Access-Control-Allow-Origin'] = '*'
-    Vue.http.get(config.getApiPath(path)).then(
+    Vue.http.get(config.getApiPath(path), {
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      }
+    }).then(
       response => callback(response),
       error => {
         if (typeof errorHandler === 'function') errorHandler(error)
