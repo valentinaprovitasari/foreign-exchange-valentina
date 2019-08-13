@@ -21,12 +21,10 @@
       {
         "source": "**",
         "destination": "/index.html"
-      }
-    ],
-    "redirects": [
+      },
       {
         "source": "/latest",
-        "destination": ""
+        "function": "helloError"
       }
     ]
   }
