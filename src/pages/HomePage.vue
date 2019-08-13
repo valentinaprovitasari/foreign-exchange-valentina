@@ -21,7 +21,7 @@
       </div>
       <div class="currency__menu  columns">
         <div class="dropdown column"
-             @click="clickDropDown()"
+             @click="showCurrency()"
              v-bind:class="{'is-active': isActive}">
           <div class="dropdown-trigger">
             <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">

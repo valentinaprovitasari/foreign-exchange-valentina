@@ -42,9 +42,9 @@ describe('HomePage.vue', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
-  test('clickDropDown', () => {
+  test('showCurrency', () => {
     wrapper.vm.isActive = false
-    wrapper.vm.clickDropDown()
+    wrapper.vm.showCurrency()
     expect(wrapper.vm.isActive).toBeTruthy()
   })
 

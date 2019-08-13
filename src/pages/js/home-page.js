@@ -6,7 +6,7 @@ export default {
   name: 'home-page',
   methods: {
     ...mapActions(['getCurrencyRate', 'setAmount', 'setSelectedCurrencies']),
-    clickDropDown () {
+    showCurrency () {
       this.isActive = !this.isActive
     },
     selectCurrency (value) {
