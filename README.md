@@ -24,8 +24,10 @@ npm run unit
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## Run Docker
-```build docker
-# docker build -t foreign-exchange-valentina .
+```
+# build docker
+docker build -t foreign-exchange-valentina .
 
-```run docker
-# docker run -p 8005:80 --name valen5 foreign-exchange-valentina
+# run docker
+docker run -p 8005:80 --name valen5 foreign-exchange-valentina
+```
