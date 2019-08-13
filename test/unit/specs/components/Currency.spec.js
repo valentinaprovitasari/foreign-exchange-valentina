@@ -41,10 +41,9 @@ describe('Currency.vue', () => {
   })
 
   test('ratesMapped', () => {
-    expect(wrapper.vm.ratesMapped).toEqual([
-      {
-        'content': 'SGD - Singapore Dollar', 'detail': '1 USD = SGD10000', 'name': 'SGD', 'rate': 100000
-      }]
+    expect(wrapper.vm.ratesMapped).toEqual([{
+      'content': 'SGD - Singapore Dollar', 'detail': '1 USD = SGD10000.00', 'name': 'SGD', 'rate': '100000.00'
+    }]
     )
   })
 })
