@@ -6,6 +6,8 @@ WORKDIR /tmp/nginx/foreign-exchange-currency-master
 COPY package.json /tmp/nginx/foreign-exchange-currency-master
 COPY . .
 RUN npm install
+RUN npm rebuild node-sass
+RUN npm run build
 
 FROM nginx:stable-alpine
 COPY --from=ui-builder  /tmp/nginx/foreign-exchange-currency-master/dist /usr/share/nginx/html

@@ -12,8 +12,8 @@ export default {
         .map(i => {
           return {
             name: i,
-            rate: Math.round(this.rates[i] * this.amount * 100) / 100,
-            content: config.rates.content[i],
+            rate: (this.rates[i] * this.amount).toFixed(),
+            content: (config.rates.content[i]).toFixed(),
             detail: '1 USD = ' + i + this.rates[i]
           }
         }) || {}
