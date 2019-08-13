@@ -1,6 +1,7 @@
 import CurrencyItem from '@/components/CurrencyItem.vue'
 import {mapGetters} from 'vuex'
 import config from '@/config'
+import numberUtil from '@/util/number'
 
 export default {
   name: 'currency',
@@ -12,9 +13,9 @@ export default {
         .map(i => {
           return {
             name: i,
-            rate: (this.rates[i] * this.amount).toFixed(),
-            content: (config.rates.content[i]).toFixed(),
-            detail: '1 USD = ' + i + this.rates[i]
+            rate: numberUtil.formatNumber(this.rates[i] * this.amount),
+            content: (config.rates.content[i]),
+            detail: '1 USD = ' + i + numberUtil.formatNumber(this.rates[i])
           }
         }) || {}
     }
